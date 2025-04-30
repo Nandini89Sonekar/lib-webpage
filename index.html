@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        /* Header Image */
+        .collegeheader-container {
+            text-align: center;
+            background: #f9f9f9;
+            padding: 10px;
+        }
+
+        .collegeheader-image {
+            max-width: 100%;
+            height: auto;
+        }
+        .header {
+            background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggTu7DsNwN06djRJalUksB-4Ev7Od5gqiLK3tGUianJl7nbaRoUcOpxpOSlfVMmt4l2bBQejcsUfEqP_AJp0j_fZDzXftR7fz_wZ2-SBFA1NaaFVBSVQAyMZR6NJO14iRApHY7mW5NYbg/s1600/Library.png') no-repeat center center;
+            background-size: cover;
+            padding: 90px;
+            text-align: center;
+            color: white;
+            font-size: 32px;
+            font-weight: bold;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 60px;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .column.about-section {
+            margin-top: -60px; /* Adjust the value as needed */
+        }
+        .column {
+            flex: 1;
+            width: 70%;
+            text-align: center;
+            color: #2e8b57;
+            font-size: 25px;
+            margin-top: 5%;
+        }
+        .about {
+            font-size: 18px;
+            color: #333;
+            text-align: left;
+        }
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .buttons a {
+            display: block;
+            text-decoration: none;
+            padding: 15px;
+            margin: 10px 0;
+            font-size: 18px;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+            width: 80%;
+        }
+        .blue { background-color: #2e8b57; }
+        .red { background-color: #2e8b57; }
+        h2 {
+            color: #2e8b57;
+        }
+        .library-timings {
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 40px;
+        }
+        .library-timings img {
+            max-width: 51%;
+            height: auto;
+            display: block;
+            margin: auto;
+        }
+                /* Cards Container */
+.cards-container {
+    text-decoration: none;
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+    gap: 70px; 
+    margin-top: 80px; 
+    margin-bottom: 50px; 
+}
+
+/* Individual Card Styling */
+.card {
+    text-decoration: none;
+    background: #2e8b57;
+    border-radius: 10px;
+    color: #f9f9f9;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 280px; /* Adjust width */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Card Hover Effect */
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Card Headings */
+.card h3 {
+    color: #fff;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.News-card {
+    width: 650px;
+    height: 200px;
+    margin: auto;
+    background: (to bottom, #226f41 20%, #fff 80%);
+    border-radius: 15px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    color:#2e8b57;
+    font-family: Arial, sans-serif;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+    margin-top: 90px;
+    margin-bottom: 50px;
+}
+
+/* Header Section */
+.News-header h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.News-header p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* Body Section */
+.News-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+/* Add News Button */
+button {
+    margin-top: 15px;
+    margin:auto;
+    padding: 10px 20px;
+    border: none;
+    background: #226f41;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d6b3a;
+}
+
+@media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .column {
+                width: 100%;
+            }
+        }
+   </style>
+<script>
+    function addNews() {
+    let newsText = prompt("Enter new notification:");
+    if (newsText) {
+        let newsList = document.getElementById("news-list");
+        let newItem = document.createElement("li");
+        newItem.textContent = "🆕 " + newsText;
+        newsList.appendChild(newItem);
+    }
+}
+</script>
+</head>
+<body>
+    <div class="collegeheader-container">
+        <img src="header.png" alt="IIITT Header" class="collegeheader-image">
+    </div>
+    <div class="header">Library</div>
+    <div class="container">
+        <div class="column">
+<iframe width="70%" height="200" src="https://www.youtube.com/embed/KCrvIJOxigY" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="column about-section">
+            <h1>About us</h1>
+            <p class="about">The university has a well-stocked library. The library has a collection of over 1000 books that students make use of to excel in their field of study. The Library users have been able to enlighten themselves by going through the newly added books.</p>
+            <p class="about">Discover a welcoming and supportive study environment in our library.  Explore our open stacks, utilize the web center for research, or find a quiet corner in our spacious reading room.  Our friendly and experienced library staff are always ready to assist you with finding the right resources and navigating our facilities.  We invite you to become a regular and engaged member of our library community.</p>
+        </div>
+        
+        <div class="column buttons">
+            <a href="#" class="blue">Login →</a>
+            <a href="resources.html" class="blue">Inventory →</a>
+            <a href="ones.html" class="blue">ONOS E-Resources →</a>
+        </div>
+    </div>
+    <div class="library-timings">
+        <img src="timings.png" alt="Library Timings">
+    </div>
+    <div class="cards-container">
+        <div class="card">
+            <h3>About Librarian</h3>
+            <p>Dr. S. Padmathilagam</p>
+            <p>Contact Info- padmathilagams@iiitt.ac.in</p>
+        </div>
+    
+        <div class="card">
+            <h3>Services</h3>
+            <p>Find out whether the desired book is available or not. Keep track of your dues and borrowed books.</p>
+        </div>
+    
+        <div class="card">
+            <h3>Book Borrowing</h3>
+            <p>Borrow up books for a duration of a whole month.</p>
+        </div>
+    </div>
+        
+    </div>
+    <div class="News-card">
+        <div class="News-header">
+            <h3>Latest News & Notifications</h3>
+            <div class="News-body">
+            <ul id="News-info">
+                <li>📢 Library will remain closed on 15th August due to Independence Day.</li>
+                <li>📖 New books have been added to the Digital Library section.</li>
+                <li>🕐 Extended Library Timings: Now open till 9 PM on weekdays!</li>
+                <li>🕐 Extended Library Timings: Now open till 9 PM on weekdays!</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
