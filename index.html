@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library</title>
@@ -11,6 +14,7 @@
             padding: 0;
             background-color: #f8f8f8;
         }
+
         /* Header Image */
         .collegeheader-container {
             text-align: center;
@@ -19,9 +23,10 @@
         }
 
         .collegeheader-image {
-            max-width: 100%;
+            width: 100%;
             height: auto;
         }
+
         .header {
             background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggTu7DsNwN06djRJalUksB-4Ev7Od5gqiLK3tGUianJl7nbaRoUcOpxpOSlfVMmt4l2bBQejcsUfEqP_AJp0j_fZDzXftR7fz_wZ2-SBFA1NaaFVBSVQAyMZR6NJO14iRApHY7mW5NYbg/s1600/Library.png') no-repeat center center;
             background-size: cover;
@@ -31,6 +36,11 @@
             font-size: 32px;
             font-weight: bold;
         }
+
+        :root {
+            --card-width: 280px;
+        }
+
         .container {
             display: flex;
             flex-wrap: wrap;
@@ -38,27 +48,33 @@
             justify-content: space-between;
             align-items: flex-start;
         }
+
         .column.about-section {
-            margin-top: -60px; /* Adjust the value as needed */
+            margin-top: 1rem;
+
         }
+
         .column {
             flex: 1;
             width: 70%;
             text-align: center;
             color: #2e8b57;
             font-size: 25px;
-            margin-top: 5%;
+            margin-top: 10%;
         }
+
         .about {
             font-size: 18px;
             color: #333;
             text-align: left;
         }
+
         .buttons {
             display: flex;
             flex-direction: column;
             align-items: center;
         }
+
         .buttons a {
             display: block;
             text-decoration: none;
@@ -70,135 +86,160 @@
             border-radius: 5px;
             width: 80%;
         }
-        .blue { background-color: #2e8b57; }
-        .red { background-color: #2e8b57; }
+
+        .blue {
+            background-color: #2e8b57;
+        }
+
+        .red {
+            background-color: #2e8b57;
+        }
+
         h2 {
             color: #2e8b57;
         }
+
         .library-timings {
             text-align: center;
             margin-top: 50px;
             margin-bottom: 40px;
         }
+
         .library-timings img {
             max-width: 51%;
             height: auto;
             display: block;
             margin: auto;
         }
-                /* Cards Container */
-.cards-container {
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 70px;
-    margin-top: 80px;
-    margin-bottom: 50px;
-}
 
-/* Individual Card Styling */
-.card {
-    text-decoration: none;
-    background: #2e8b57;
-    border-radius: 10px;
-    color: #f9f9f9;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    width: 280px; /* Adjust width */
-    transition: transform 0.3s ease-in-out;
-}
+        /* Cards Container */
+        .cards-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin: 80px 20px 50px;
+        }
 
-/* Card Hover Effect */
-.card:hover {
-    transform: scale(1.05);
-}
+        /* Individual Card Styling */
+        .card {
+            text-decoration: none;
+            background: #2e8b57;
+            border-radius: 10px;
+            color: #f9f9f9;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: var(--card-width);
+            transition: transform 0.3s ease-in-out;
+        }
 
-/* Card Headings */
-.card h3 {
-    color: #fff;
-    font-size: 22px;
-    margin-bottom: 10px;
-}
+        /* Card Hover Effect */
+        .card:hover {
+            transform: translateY(-10px);
+            background: #246b44;
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35);
+        }
 
-.News-card {
-    width: 650px;
-    height: 200px;
-    margin: auto;
-    background: (to bottom, #226f41 20%, #fff 80%);
-    border-radius: 15px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    color:#2e8b57;
-    font-family: Arial, sans-serif;
-    text-align: left;
-    position: relative;
-    overflow: hidden;
-    margin-top: 90px;
-    margin-bottom: 50px;
-}
+        .card i {
+            margin-bottom: 15px;
+            color: #fdd835;
+        }
 
-/* Header Section */
-.News-header h3 {
-    margin: 0;
-    font-size: 20px;
-    font-weight: bold;
-}
 
-.News-header p {
-    margin: 5px 0;
-    font-size: 14px;
-}
+        .card h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+            padding-bottom: 10px;
+        }
 
-/* Body Section */
-.News-body {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 15px;
-}
+        .News-card {
+            width: 100%;
+            max-width: calc(var(--card-width) * 3 + 55px*3);
 
-/* Add News Button */
-button {
-    margin-top: 15px;
-    margin:auto;
-    padding: 10px 20px;
-    border: none;
-    background: #226f41;
-    color: white;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-}
+            height: 200px;
+            margin: 90px auto 50px auto;
+            background: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            color: #2e8b57;
+            font-family: Arial, sans-serif;
+            text-align: left;
+            position: relative;
+            overflow: hidden;
+        }
 
-button:hover {
-    background: #1d6b3a;
-}
 
-@media (max-width: 768px) {
+        /* Header Section */
+        .News-header h3 {
+            margin: 0;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .News-header p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+
+        .card p {
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        /* Body Section */
+        .News-body {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 15px;
+        }
+
+        /* Add News Button */
+        button {
+            margin-top: 15px;
+            margin: auto;
+            padding: 10px 20px;
+            border: none;
+            background: #226f41;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #1d6b3a;
+        }
+
+        @media (max-width: 768px) {
             .container {
                 flex-direction: column;
                 align-items: center;
                 text-align: center;
             }
+
             .column {
+                margin-top: 1rem;
                 width: 100%;
             }
         }
-   </style>
-<script>
-    function addNews() {
-    let newsText = prompt("Enter new notification:");
-    if (newsText) {
-        let newsList = document.getElementById("news-list");
-        let newItem = document.createElement("li");
-        newItem.textContent = "🆕 " + newsText;
-        newsList.appendChild(newItem);
-    }
-}
-</script>
+    </style>
+    <script>
+        function addNews() {
+            let newsText = prompt("Enter new notification:");
+            if (newsText) {
+                let newsList = document.getElementById("news-list");
+                let newItem = document.createElement("li");
+                newItem.textContent = "🆕 " + newsText;
+                newsList.appendChild(newItem);
+            }
+        }
+    </script>
 </head>
+
 <body>
     <div class="collegeheader-container">
         <a href="https://iiitt.ac.in" target="_blank" style="text-decoration: none;">
@@ -208,12 +249,19 @@ button:hover {
     <div class="header">Library</div>
     <div class="container">
         <div class="column">
-<iframe width="70%" height="200" src="https://www.youtube.com/embed/KCrvIJOxigY" frameborder="0" allowfullscreen></iframe>
+            <iframe width="70%" height="200" src="https://www.youtube.com/embed/KCrvIJOxigY" frameborder="0"
+                allowfullscreen></iframe>
         </div>
         <div class="column about-section">
             <h1>About us</h1>
-            <p class="about">The university has a well-stocked library. The library has a collection of over 1000 books that students make use of to excel in their field of study. The Library users have been able to enlighten themselves by going through the newly added books.</p>
-            <p class="about">Discover a welcoming and supportive study environment in our library.  Explore our open stacks, utilize the web center for research, or find a quiet corner in our spacious reading room.  Our friendly and experienced library staff are always ready to assist you with finding the right resources and navigating our facilities.  We invite you to become a regular and engaged member of our library community.</p>
+            <p class="about">The university has a well-stocked library. The library has a collection of over 1000 books
+                that students make use of to excel in their field of study. The Library users have been able to
+                enlighten themselves by going through the newly added books.</p>
+            <p class="about">Discover a welcoming and supportive study environment in our library. Explore our open
+                stacks, utilize the web center for research, or find a quiet corner in our spacious reading room. Our
+                friendly and experienced library staff are always ready to assist you with finding the right resources
+                and navigating our facilities. We invite you to become a regular and engaged member of our library
+                community.</p>
         </div>
 
         <div class="column buttons">
@@ -225,37 +273,41 @@ button:hover {
     <div class="library-timings">
         <img src="timings.png" alt="Library Timings">
     </div>
+
     <div class="cards-container">
         <div class="card">
-            <h3>About Librarian</h3>
-            <p>Dr. S. Padmathilagam</p>
-            <p>Contact Info- padmathilagams@iiitt.ac.in</p>
+            <i class="fas fa-university fa-3x"></i>
+            <h3>Library Administration</h3>
+            <p><strong>Library-in-charge:</strong> Dr. S. Padmathilagam</p>
+            <p><strong>Librarian:</strong> Dr. Issac Arputharaj</p>
+            <p><strong>Contact:</strong> padmathilagams@iiitt.ac.in</p>
         </div>
 
         <div class="card">
+            <i class="fas fa-book-open fa-3x"></i>
             <h3>Services</h3>
-            <p>Find out whether the desired book is available or not. Keep track of your dues and borrowed books.</p>
+            <p>Find out whether the desired book is available or not.</p>
+            <p>Keep track of your dues and borrowed books easily.</p>
         </div>
 
         <div class="card">
+            <i class="fas fa-hand-holding fa-3x"></i>
             <h3>Book Borrowing</h3>
-            <p>Borrow up books for a duration of a whole month.</p>
+            <p>Borrow up for a duration of one month.</p>
         </div>
     </div>
+
 
     </div>
     <div class="News-card">
         <div class="News-header">
             <h3>Latest News & Notifications</h3>
             <div class="News-body">
-            <ul id="News-info">
-                <li>📢 Library will remain closed on 15th August due to Independence Day.</li>
-                <li>📖 New books have been added to the Digital Library section.</li>
-                <li>🕐 Extended Library Timings: Now open till 9 PM on weekdays!</li>
-                <li>🕐 Extended Library Timings: Now open till 9 PM on weekdays!</li>
-            </ul>
+                <ul id="News-info">
+                    <li>Libary is now open from Monday to Saturday!</li>
+                </ul>
+            </div>
         </div>
-    </div>
 </body>
 
 </html>
